@@ -1,0 +1,70 @@
+*{
+    font: system;
+    background-blend-mode: lighten;
+    /* opacity: 0.3; */
+}
+
+body{
+    background-image: url(photo.jpg); 
+    background-size:cover;
+}
+
+/* Heading text area */
+
+h1{
+    text-align: center;
+    border-bottom: 3px double;
+    font-size: 80px;
+    backdrop-filter: blur;
+}
+
+h3{
+    text-align: center;
+}
+
+/* Label area */
+
+#blurr{
+    background-color:aliceblue;
+    opacity: 0.3;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    /* text-align: center; */
+    font-weight: 600;
+    padding: 5px;
+    font-size: 1.4em;
+}
+
+body{
+    padding: 50px;
+}
+
+#Outer_box{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* background-image: url(Grey-image.jpg);
+    background-size: contain; */
+}
+
+/* Buttons */
+
+#button{
+
+    /* top:50%; */
+    border-radius: 10px;
+    border: 0.5px solid black;
+    padding: 15px;
+
+}
+
+button:hover{
+    box-shadow: 5px 5px 16px black;
+}

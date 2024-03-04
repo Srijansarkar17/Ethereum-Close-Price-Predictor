@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srijan Sarkar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div>
+        <h1>Ethereum price predictor</h1>
+        <h3>Enter the Opening price, Market cap & market low below to get a prediction for the Closing price</h3>
+    </div>
+
+    <div id="Outer_box">
+
+        <form action="{{ url_for('predict') }}" method="post">
+
+            <div class="text" id="1">
+                <label for="opening">Enter the opening price for today:</label>
+                <input type="text" id="opening" name="opening_price">
+            </div>
+
+            <div class="text" id="2">
+                <label for="m_cap">Enter the market high for today:</label>
+                <input type="text" id="m_cap" name="m_cap">
+            </div>
+
+            <div class="text" id="3">
+                <label for="m_low">Enter the market low for today:</label>
+                <input type="text" id="m_low" name="m_low">
+            </div>
+
+            <div id="button" class="text">
+                <button type="submit" id="submit">Predict</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <br>
+    <br>
+    {{ prediction_text }}
+
+</body>
+</html>
